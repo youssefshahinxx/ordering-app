@@ -188,7 +188,6 @@ checkoutForm.addEventListener('submit', event => {
     formData.append("phone", checkoutForm.phone.value)
     formData.append("pov", checkoutForm.pov.value)
     formData.append("cvv", checkoutForm.cvv.value)
-    console.log("Name:", formData.get("name"));
 
     checkoutEl.querySelector("button").classList.add("hide")
     checkoutEl.querySelector(".cancel-btn").classList.add("hide")
@@ -198,6 +197,8 @@ checkoutForm.addEventListener('submit', event => {
         checkoutMessageEl.querySelector(".checkout-message").classList.remove("hide")
         checkoutEl.querySelector("img").classList.add("hide")
         checkoutEl.querySelector(".checkout-ui").classList.add("hide")
+        document.getElementById("checkout-btn").classList.add("hide")
+        document.getElementById("cart").classList.add("check-color")
     }, 3000);
 
     checkoutMessageEl.innerHTML = `

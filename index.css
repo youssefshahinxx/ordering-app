@@ -198,3 +198,15 @@ form img {
     color: #065F46;
     font-family: Smythe, "open sans", sans-serif;
 }
+
+.check-color {
+    /* background-color: #dcdcdce6; */
+    padding: 20px;
+    border: 4px solid #000000;
+    /* border-radius: 4px; */
+
+    button:hover {
+     background-color: #ed5e5e;
+     color: #ffffff;   
+    }
+}
